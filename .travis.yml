@@ -1,0 +1,6 @@
+language : node_js
+os:
+ - linux
+ - os
+node_js :
+ - stable

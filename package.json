@@ -1,0 +1,41 @@
+{
+  "name": "async-zip-stream",
+  "version": "1.0.0",
+  "description": "Code to create zip stream from input streams in asynchronous way",
+  "homepage": "https://github.com/ladeiko/async-zip-stream",
+  "main": "dist/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint" : "eslint --fix lib/*.ts test/*.ts",
+    "test": "jest"
+  },
+  "author": {
+    "name": "Siarhei Ladzeika",
+    "email": "sergey.ladeiko@gmail.com",
+    "url": "https://www.npmjs.com/~ladeiko"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ladeiko/async-zip-stream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ladeiko/async-zip-stream/issues"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.26.0",
+    "@typescript-eslint/parser": "^4.26.0",
+    "eslint": "^7.27.0",
+    "eslint-config-google": "^0.14.0",
+    "husky": "^6.0.0",
+    "jest": "^27.0.3",
+    "ts-jest": "^27.0.2",
+    "typescript": "^4.3.2"
+  },
+  "dependencies": {
+    "zip-stream": "^4.1.0"
+  }
+}
