@@ -6,9 +6,9 @@ export interface AsyncEntry {
   stream(): Promise<Readable>;
 }
 
-export function createZipStream(entries: AsyncEntry[]): Readable {
+export function createZipStream(entries: AsyncEntry[], options?: any | undefined): Readable {
   const clonedEntries = entries.map((e) => e);
-  const archive = new Packer();
+  const archive = new Packer(options); // see https://www.archiverjs.com/zipstream/ options
 
   const step = async () => {
     if (clonedEntries.length === 0) {
